@@ -104,7 +104,7 @@ h1 {
   backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 50px;
-  margin-top: 14rem;
+  margin-top: 13rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 10;
@@ -203,11 +203,64 @@ h1 {
   transform: translateY(50px);
 }
 
+/* Education */
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #eeeff1;
+  background-color: #132238;
+  text-align: center;
+  height: 68vh;
+  width: auto;
+  padding-top: 65px;
+}
+.timeline {
+  padding: 25px;
+  
+  text-align: left;
+  margin-bottom: 0rem;
+}
+.eduhd{
+  padding: 40px;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.timeline-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  /* margin-top: -30px; */
+}
+
+.timeline-circle {
+  position: absolute;
+ background-color: #eeeff1;
+ height: 1.5rem;
+ width: 1.5rem;
+ border-radius: 50%;
+ top:11%;
+ left: -6.5%;
+}
+
+.timeline-content:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 0.1rem); 
+  border-left: 2px dotted #eeeff1;
+  top: 2.4rem; 
+  left: -1.6rem; 
+}
+
 /* Interests */
 .interests {
-  height: 200vh;
+  background-color: var(--background-color);
+  height: 100vh;
   width: auto;
-  margin-top: 50px;
   margin-bottom: 10rem;
 }
 
@@ -240,60 +293,14 @@ h1 {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Education */
-
-.education {
+/* Role Model */
+.rolemodel {
   display: flex;
-
   flex-direction: column;
   align-items: center;
-  color: #eeeff1;
-  background-color: #132238;
-  text-align: center;
-  height: 70vh;
+  justify-content: center;
+  height: 100vh;
   width: auto;
-  padding-top: 40px;
-}
-.timeline {
-  padding: 25px;
-  
-  text-align: left;
-  margin-bottom: 0rem;
-}
-.eduhd{
-  padding: 40px;
-  font-size: 20px;
-  margin-top: 0px;
+  padding: 0px 15rem;
 }
 
-.timeline-content {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  margin-top: 0px;
-  margin-bottom: 40px;
-  /* margin-top: -30px; */
-}
-/* .timeline-list{
-  margin-top: 0px;
-} */
-
-.timeline-circle {
-  position: absolute;
- background-color: #eeeff1;
- height: 1.5rem;
- width: 1.5rem;
- border-radius: 50%;
- top:12%;
- left: -6.5%;
-  /* padding: 20px; */
-}
-
-.timeline-content:not(:last-child)::before {
-  content: "";
-  position: absolute;
-  height: calc(100% - 0.3rem); /* Subtract the circle height */
-  border-left: 2px dotted #eeeff1;
-  top: 2rem; /* Center between the circles */
-  left: -1.6rem; /* Align with circles */
-}
