@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--background-color);
   text-decoration: none;
 }
 
@@ -168,7 +168,7 @@ h1 {
 
 .vns .txt p {
   padding-left: 100px;
-  padding-right: 80px;
+  padding-right: 80px; 
 }
 
 .boxesVns {
@@ -187,6 +187,7 @@ h1 {
 }
 
 .vnsBox {
+  font-size: large;
   background: rgba(255, 255, 255, 0.26);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -200,7 +201,9 @@ h1 {
 }
 
 .stagger {
+  padding-left: 4.5rem;
   transform: translateY(50px);
+  width: 16rem;
 }
 
 /* Education */
@@ -259,7 +262,7 @@ h1 {
 /* Interests */
 .interests {
   background-color: var(--background-color);
-  height: 100vh;
+  height: 110vh;
   width: auto;
   margin-bottom: 10rem;
 }
@@ -298,9 +301,26 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  text-align: center;
+  height: 80vh;
   width: auto;
-  padding: 0px 15rem;
+  padding: 7rem 12rem;
+  font-size: 20px;
 }
 
+.rolemodel h1 {
+  margin-bottom: 1rem;
+  font-size: 40px;
+}
+
+/* Footer */
+.footer{
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  color: #eeeff1;
+  background-color: #132238;
+  height: 30vh;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
