@@ -279,6 +279,8 @@ h1 {
   grid-template-rows: repeat(2, auto);
   gap: 3rem;
   padding: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .interestBox {
